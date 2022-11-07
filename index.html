@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSHANDSON SET MAP</title>
+</head>
+<body>
+    <pre>
+Problem 1:
+You are given a string (STR) of length N, consisting of only the lower case English alphabet.
+Your task is to remove all the duplicate occurrences of characters in the string.
+
+var str="aabcadeecfb";
+var mySet=new Set(str);
+str=[...mySet];
+console.log(...mySet);
+
+Input:
+abcadeecfb
+
+Output:
+abcdef
+
+Problem 2:
+You are given a string (STR) of length N, you have to print the count of all alphabet.(using maps)
+
+const map = new Map();
+map.set('a',2);
+map.set('b',2);
+map.set('c',2);
+map.set('a',2);
+map.set('d',1);
+map.set('e',2);
+map.set('e',2);
+map.set('c',2);
+map.set('f',1);
+map.set('b',2);
+map.set(map);
+console.log(map.size);
+map.forEach(function(value,key){
+    console.log(key + "=" + value);
+})
+
+Input:
+abcadeecfb
+
+Output:
+7
+a=2
+b=2
+c=2
+d=1
+e=2
+f=1
+    </pre>
+</body>
+</html>
